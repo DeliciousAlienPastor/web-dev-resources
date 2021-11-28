@@ -1,0 +1,69 @@
+/* reset page layout */
+* {
+  margin: 0;
+  padding: 0;
+  outline: solid red;
+}
+
+main {
+  padding: 20px;
+}
+
+.nav {
+  background-color: rgb(0, 255, 64);
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  align-items: center;
+}
+
+#site-name {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.nav .nav-item {
+  padding: 0 20px;
+}
+
+.color-container {
+  width: 100%;
+  /* to center the divs inside */
+  text-align: center; 
+}
+
+.color {
+  display: inline-block;
+  /* to account for the small right padding already present on the divs - 24 instead of 25 */
+  width: 24%;
+  min-height: 100px;
+  margin: 20px auto;
+}
+.color-desc {
+  text-align: left;
+}
+
+#color-1 {
+  background-color: brown;
+
+}
+
+#color-2 {
+  background-color: burlywood;
+
+}
+
+#color-3 {
+  background-color: cadetblue;
+
+}
+
+#color-4 {
+  background-color: chartreuse;
+
+}
+
+#color-5 {
+  background-color: coral;
+
+}
