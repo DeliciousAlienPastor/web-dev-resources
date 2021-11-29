@@ -18,36 +18,46 @@
 @font-face {
   font-family: 'Merriweather';
   font-style: italic;
-  font-weight: 400;
+  font-weight: 400, 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/merriweather/v25/u-4m0qyriQwlOrhSvowK_l5-eRZOf-I.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/merriweather/v25/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-h1,
-h2,
-h3 {
-  margin: 10px auto;
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400, 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-main {
-  padding: 20px;
-}
-
-section {
-  /* padding-bottom: 20px; */
-  border: 2px solid gray;
-  margin: 30px 0;
-  padding: 10px;
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* to make the nav bar fixed on top */
@@ -56,19 +66,46 @@ section {
   width: 100%;
   top: 0;
   /* display: none; */
+  z-index: 1;
 }
 
 .nav {
   background-color: burlywood;
   display: flex;
   padding: 15px;
-  font-size: 20px;
   align-items: center;
+  font-family: 'Montserrat';
+}
+
+h1,
+h2,
+h3 {
+  margin: 10px 0;
+  font-family: 'Merriweather', sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  /* padding-bottom: 20px; */
+  top: 10px;
+  border: 2px solid gray;
+  margin: 40px 0;
+  padding: 10px;
+}
+
+ul {
+  margin-left: 20px;
+  font-family: 'Merriweather';
 }
 
 #site-name {
   flex-grow: 1;
   font-weight: bold;
+  font-size: 20px;
+  font-family: 'Montserrat';
 }
 
 .nav .nav-item {
@@ -77,7 +114,10 @@ section {
 
 .container {
   width: 100%;
-  /* to center the divs inside */
+  /* outline: solid red; */
+}
+
+.color-container {
   text-align: center;
 }
 
@@ -91,10 +131,14 @@ section {
   vertical-align: middle;
   padding: 5% 0;
   margin: 10px 0;
+  font-family: 'Ubuntu';
+  font-style: italic;
 }
 
-.container-desc {
+.container-desc,
+.use-desc {
   text-align: left;
+  font-family: 'Merriweather';
 }
 
 #color-1 {
@@ -125,7 +169,7 @@ section {
   display: inline-block;
   text-align: left;
   /* two divs per row */
-  width: 32%;
+  width: 49%;
   margin: 10px 0;
 }
 
@@ -139,7 +183,17 @@ section {
 }
 
 #font-1 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+}
+
+#font-2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+#font-3 {
+  font-family: 'Ubuntu';
   font-weight: 400;
 }
 
@@ -149,4 +203,11 @@ section {
 
 .font-example-3 {
   font-weight: 700;
+}
+
+.text-heading h1,
+ul,
+p {
+  margin-bottom: 10px;
+  font-family: 'Merriweather';
 }

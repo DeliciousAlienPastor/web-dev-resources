@@ -16,7 +16,7 @@
       <span id='site-name'>Web Design Tools</span>
       <a href="#colors-section" class='nav-item'>Colors</a>
       <a href="#fonts-section" class='nav-item'>Fonts</a>
-      <a href="#" class='nav-item'>Text Styles</a>
+      <a href="#text-section" class='nav-item'>Text Styles</a>
     </nav>
   </div>
 
@@ -24,7 +24,7 @@
   <main>
     <section id='colors-section'>
       <h1>Choice of colors</h1>
-      <div class='container'>
+      <div class='color-container container'>
         <h3 class='container-desc'>Colors with names and their hex values</h3>
         <div class='color' id="color-1">
           <p>Brown</p>
@@ -77,8 +77,8 @@
           </p>
         </div>
 
-        <div class='font' id='font-1'>
-          <p class='font-label'>Merriweather</p>
+        <div class='font' id='font-2'>
+          <p class='font-label'>Montserrat</p>
           <p class='font-example-1'>
             The quick brown fox jumps over the lazy dog.
           </p>
@@ -90,8 +90,8 @@
           </p>
         </div>
 
-        <div class='font' id='font-1'>
-          <p class='font-label'>Merriweather</p>
+        <div class='font' id='font-3'>
+          <p class='font-label'>Ubuntu</p>
           <p class='font-example-1'>
             The quick brown fox jumps over the lazy dog.
           </p>
@@ -102,31 +102,40 @@
             The quick brown fox jumps over the lazy dog.
           </p>
         </div>
+      </div>
+    </section>
 
-        <div class='font' id='font-1'>
-          <p class='font-label'>Merriweather</p>
-          <p class='font-example-1'>
-            The quick brown fox jumps over the lazy dog.
-          </p>
-          <p class='font-example-2'>
-            The quick brown fox jumps over the lazy dog.
-          </p>
-          <p class='font-example-3'>
-            The quick brown fox jumps over the lazy dog.
-          </p>
-        </div>
-
-        <div class='font' id='font-1'>
-          <p class='font-label'>Merriweather</p>
-          <p class='font-example-1'>
-            The quick brown fox jumps over the lazy dog.
-          </p>
-          <p class='font-example-2'>
-            The quick brown fox jumps over the lazy dog.
-          </p>
-          <p class='font-example-3'>
-            The quick brown fox jumps over the lazy dog.
-          </p>
+    <section id='text-section'>
+      <h1>Choice of text styles</h1>
+      <div class='container'>
+        <h3 class='container-desc'>Sample of text styles</h3>
+        <div class='text-heading'>
+          <h1>h1: Section and navigation</h1>
+          <ul>
+            <li>Font weight: 700 (bold)</li>
+            <li>Font size: 2em (default)</li>
+            <li>Font family: Merriweather (section), <span style="font-family: 'Montserrat';">Montserrat</span>
+              (navigation)
+            </li>
+          </ul>
+          <h3>h3: Subsection</h3>
+          <ul>
+            <li>Font weight: 700 (bold)</li>
+            <li>Font size: 1.17em (default)</li>
+            <li>Font family: Merriweather</li>
+          </ul>
+          <p>p: Paragraph</p>
+          <ul>
+            <li>Font weight: 400 (regular)</li>
+            <li>Font size: 1em (default)</li>
+            <li>Font family: Merriweather</li>
+          </ul>
+          <p style="font-family: 'Ubuntu';">Image label</p>
+          <ul>
+            <li>Font weight: 400 (regular)</li>
+            <li>Font size: 1em (default)</li>
+            <li>Font family: Ubuntu</li>
+          </ul>
         </div>
       </div>
     </section>
