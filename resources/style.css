@@ -1,16 +1,61 @@
 /* reset page layout */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: solid red;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v25/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v25/u-4m0qyriQwlOrhSvowK_l5-eRZOf-I.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v25/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h1,
+h2,
+h3 {
+  margin: 10px auto;
 }
 
 main {
   padding: 20px;
 }
 
+section {
+  padding-bottom: 20px;
+}
+
+/* to make the nav bar fixed on top */
+.parent {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 .nav {
-  background-color: rgb(0, 255, 64);
+  background-color: burlywood;
   display: flex;
   padding: 20px;
   font-size: 20px;
@@ -26,44 +71,78 @@ main {
   padding: 0 20px;
 }
 
-.color-container {
+.container {
   width: 100%;
   /* to center the divs inside */
-  text-align: center; 
+  text-align: center;
 }
 
 .color {
   display: inline-block;
-  /* to account for the small right padding already present on the divs - 24 instead of 25 */
-  width: 24%;
+  /* to account for the small right padding already 
+  present on the divs - 24 instead of 25 */
+  width: 32%;
   min-height: 100px;
-  margin: 20px auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5% 0;
+  margin: 10px 0;
 }
-.color-desc {
+
+.container-desc {
   text-align: left;
 }
 
 #color-1 {
-  background-color: brown;
-
+  background-color: #a52a2a;
 }
 
 #color-2 {
-  background-color: burlywood;
-
+  background-color: #deb887;
 }
 
 #color-3 {
-  background-color: cadetblue;
-
+  background-color: #5f9ea0;
 }
 
 #color-4 {
-  background-color: chartreuse;
-
+  background-color: #7fff00;
 }
 
 #color-5 {
-  background-color: coral;
+  background-color: #ff7f50;
+}
 
+#color-6 {
+  background-color: #b8860b;
+}
+
+.font {
+  display: inline-block;
+  text-align: left;
+  /* two divs per row */
+  width: 49%;
+  margin: 10px 0;
+}
+
+.font p {
+  padding-bottom: 10px;
+}
+
+.font-label {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+#font-1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+
+.font-example-2 {
+  font-style: italic;
+}
+
+.font-example-3 {
+  font-weight: 700;
 }
