@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: solid red;
+  /* outline: solid red; */
 }
 
 @font-face {
@@ -44,7 +44,10 @@ main {
 }
 
 section {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
+  border: 2px solid gray;
+  margin: 30px 0;
+  padding: 10px;
 }
 
 /* to make the nav bar fixed on top */
@@ -52,12 +55,13 @@ section {
   position: fixed;
   width: 100%;
   top: 0;
+  /* display: none; */
 }
 
 .nav {
   background-color: burlywood;
   display: flex;
-  padding: 20px;
+  padding: 15px;
   font-size: 20px;
   align-items: center;
 }
@@ -121,7 +125,7 @@ section {
   display: inline-block;
   text-align: left;
   /* two divs per row */
-  width: 49%;
+  width: 32%;
   margin: 10px 0;
 }
 
